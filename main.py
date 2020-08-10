@@ -69,6 +69,7 @@ def executeSell():
     isNextOperationBuy = True
 
 def runBot():
+    global loopIteration
     while True:
         loopIteration += 1
         print(f"Loop Iteration {loopIteration}")
