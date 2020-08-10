@@ -69,6 +69,7 @@ def executeSell():
 
 def runBot():
     while True:
+        print("this is a test")
         if isNextOperationBuy == True:
             attemptBuy()
         else:
