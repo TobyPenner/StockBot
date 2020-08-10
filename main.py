@@ -7,6 +7,7 @@ currencyPairSecondaryNotation = 'XXRPZUSD'
 isNextOperationBuy = True
 buyPrice = 0
 currentProfit = 0
+loopIteration = 0
 
 def getMarketPrice():
     return float(requests.get(f"https://api.cryptowat.ch/markets/kraken/{currencyPair}/price").json().get('result').get('price'))
@@ -69,7 +70,7 @@ def executeSell():
 
 def runBot():
     while True:
-        print("this is a test")
+        print(f"Loop Iteration {loopIteration}")
         if isNextOperationBuy == True:
             attemptBuy()
         else:
