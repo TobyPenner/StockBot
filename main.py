@@ -70,6 +70,7 @@ def executeSell():
 
 def runBot():
     while True:
+        loopIteration += 1
         print(f"Loop Iteration {loopIteration}")
         if isNextOperationBuy == True:
             attemptBuy()
